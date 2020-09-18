@@ -1,0 +1,240 @@
+html{
+    height: 100%;
+    min-height: 100%;
+}
+#top {
+    display: grid ;
+    grid-template-columns: 1fr 55px 55px 70px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas:". gmail image applications connexion" ;
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    cursor: pointer;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#gmail:hover{
+    text-decoration: underline;
+}
+
+#image{
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+#image:hover{
+    text-decoration: underline;
+}
+
+#applications{
+    grid-area: applications;
+    justify-self: center;
+    align-self: center;
+    cursor: default;
+}
+#connexion{
+    grid-area: connexion;
+    justify-self: center;
+    align-self: center;
+    background-color: #4285f4;
+    color: white;
+    height: 30px;
+    width: 93px;
+    text-align: center;
+    line-height: 30px;
+    cursor: default;
+}
+
+#center {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 584px 1fr;
+    grid-template-rows: 200px 70px 200px;
+    grid-template-areas: 
+    ". logo ."
+    ". recherche ."
+    ". flexbox .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+    cursor: default;
+}
+#flexbox{
+    display: flex;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: auto ;
+    margin-top: 30px;
+
+}
+#recherche{
+    grid-area: recherche;
+    height: 44px;
+    align-self: end;
+    border: 1px solid rgba(214, 214, 214, 0.795);
+    border-radius: 100px;
+}
+#recherche:hover {
+    box-shadow: 1px 1px 5px rgb(184, 184, 184);
+}
+
+#recherchegoogle{
+    grid-area: recherchegoogle;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+    border: rgb(243, 243, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 151px;
+    height: 36px;
+    margin-right: 7px;
+}
+#recherchegoogle:hover {
+    cursor: pointer;
+    border: 1px solid rgb(206, 206, 206);
+    color: black;
+    text-decoration: none;
+    text-size-adjust: none;
+}
+#phrasealeatoire{
+        grid-area: phrasealeatoire;
+        height: 35px;
+        border-radius: 5px;
+        background-color: rgb(243, 243, 243);
+        color: rgb(97, 97, 97);
+        font-size: 14px;
+        border: rgb(243, 243, 243);
+        font-family: Arial, Helvetica, sans-serif;
+        width: 151px;
+        height: 36px;
+        margin-left: 7px;
+}
+
+#phrasealeatoire:hover {
+    cursor: pointer;
+    border: 1px solid rgb(206, 206, 206);
+    color: black;
+    text-decoration: none;
+    text-size-adjust: none
+;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 275px 1fr 150px 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: "france . . . . . . . ."
+    "publicite entreprise propos comment . info confidentialite conditions parametres" ;
+    background-color: #f2f2f2;
+    border: 1px solid #e4e4e4;
+    color: rgba(0,0,0,.54);
+    font-size: 17px;
+}
+
+#france{
+    grid-area: france;
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+    line-height: 40px;
+    border: rgb(179, 179, 179);
+}
+
+#publicite {
+    font-size: 14px;
+    grid-area: publicite;
+    justify-self: center;
+    align-self: center;
+}
+#publicite:hover {
+    text-decoration: underline;
+}
+
+#entreprise{
+    font-size: 14px;
+    grid-area: entreprise;
+    justify-self: center;
+    align-self: center;
+}
+#entreprise:hover {
+    text-decoration: underline;
+}
+
+#propos{
+    grid-area: propos;
+    justify-self: center;
+    font-size: 14px;
+    align-self: center;
+}
+#propos:hover {
+    text-decoration: underline;
+}
+
+#comment{
+    grid-area: comment;
+    justify-self: flex-start;
+    font-size: 14px;
+    align-self: center;
+}
+#comment:hover {
+    text-decoration: underline;
+}
+
+#info{
+    grid-area: info;
+    justify-self: flex-start;
+    align-self: center;
+    font-size: 14px;
+}
+#info:hover {
+    text-decoration: underline;
+}
+
+#confidentialite{
+    grid-area: confidentialite;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#confidentialite:hover {
+    text-decoration: underline;
+}
+
+#conditions{
+    grid-area: conditions;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#conditions:hover {
+    text-decoration: underline;
+}
+
+#parametres{
+    grid-area: parametres;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+    margin-right: 15px;
+}
+#parametres:hover {
+    text-decoration: underline;
+}
